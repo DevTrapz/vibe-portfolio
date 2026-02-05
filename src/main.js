@@ -1,4 +1,5 @@
 import { loadHtml, loadCss } from "./utils/loader.js";
+import { initNavbar } from "./components/Navbar/script.js";
 
 // Import page logics
 import * as HomePage from "./pages/home/script.js";
