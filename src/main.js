@@ -25,11 +25,11 @@ async function router() {
   // Better: Render layout once, then render page into a slot.
 
   if (!document.querySelector(".navbar")) {
-    const navbarHtml = await loadHtml("/src/components/Navbar/index.html");
+    const navbarHtml = await loadHtml("src/components/Navbar/index.html");
     const header = document.createElement("header");
     header.innerHTML = navbarHtml;
     document.body.prepend(header);
-    loadCss("/src/components/Navbar/styles.css");
+    loadCss("src/components/Navbar/styles.css");
     initNavbar();
   }
 
